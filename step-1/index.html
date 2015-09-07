@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>TriSys Web API Step by Step Guide</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2" style="text-align: left;">
+                    <a href="http://jobs.trisys.co.uk">
+                        <img src="https://api.trisys.co.uk/doc/images/TriSys-v10-50x50.png" height="36" />
+                    </a>
+                    &nbsp;
+                    <strong>TriSys Web API</strong>                    
+                </div>
+                <div class="col-md-10">
+                    <strong>Step by Step Guide to Building a Recruitment Agency Web Site</strong>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a class="menu-top-active">Step 1 (Index)</a></li>						
+                            <li><a href="../step-2">Step 2 (VacancySearch)</a></li>
+                            <li><a href="../step-3">Step 3</a></li>
+                            <li><a href="../step-4">Step 4</a></li>
+                            <li><a href="../step-5">Step 5</a></li>
+                            <li><a href="../step-6">Step 6</a></li>
+                            <li><a href="../step-7">Step 7</a></li>
+                            <li><a href="../step-8">Step 8</a></li>
+                            <li><a href="../step-9">Step 9</a></li>
+                            <li><a href="../step-10">Step 10</a></li>
+                            <li><a href="../step-11">Step 11</a></li>
+                            <li><a href="../step-12">Step 12</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h1>Step 1: Getting Started</h1><br />
+                    <p>
+                        This is the first stage in the step by step guide to building a recruitment agency web site
+                        which uses the
+                        <a href="https://api.trisys.co.uk" target="_blank">TriSys Web API</a>
+                        to search, display and update recruiting data
+                        held in TriSys' cloud. The following steps will be conducted in sequence, although
+                        some steps may be skipped depending upon the business requirements of the recruitment agency.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Index / Steps</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                1. Procure an operational, fully editable website
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse in" style="height: auto;">
+                                        <div class="panel-body">
+                                            The main prerequisite to building an interactive jobs portal for a recruitment agency is to
+                                            start with a hosted web site to which a web designer has full access.
+                                            This web site can be sourced from one of the many 
+                                            <a href="https://www.google.co.uk/webhp?ie=UTF-8#q=website%20templates" target="_blank">
+                                               web site template services</a>
+                                             and typically cost under $50.
+                                            once the web site is operational and has the branding of the recruitment agency, then it
+                                            can be edited by copying and pasting html and javascript from this step-by-step guide
+                                            to build a compelling and interactive candidate oriented recruitment agency web site
+                                            with live jobs from the agency CRM database.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                                2. Searching &amp; displaying list of vacancies
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-2">Step 2</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Candidates visiting the recruitment agency web site will see a list of live vacancies.
+                                            Candidates can refine their search using job title, start date, location, salary/rate or any
+                                            other type of search they require. 
+                                            Candidates can drill into one or more vacancies and add to their favourites or apply.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                                3. Viewing individual vacancy summary
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-3">Step 3</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            After searching for vacancies and drilling into one or more vacancies, candidates can add the
+                                            selected vacancy to their favourites or apply.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                                                4. Contact us
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-4">Step 4</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Build a contact-us page to capture details of a candidate (or client) who wishes to
+                                            engage with the recruitment agency. The details are logged into the agency CRM system
+                                            and automated template driven e-mail messages are sent to the requester and agency consultants.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
+                                                5. Candidate registration
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-5">Step 5</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Candidates can register by filling in a form. The details are logged into the agency CRM system
+                                            and automated template driven e-mail messages are sent to the candidate and agency consultants.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed">
+                                                6. Login
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-6">Step 6</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Candidates who have registered, or have been sent their login credentials by the recruitment agency,
+                                            can login to the recruitment agency web site and apply to vacancies, or maintain their candidate profile
+                                            such as updating their availability. work preferences or uploading a new CV.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" class="collapsed">
+                                                7. Forgotten password
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-7">Step 7</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Candidates who have previously registered or are held in the recruitment agency CRM system,
+                                            may request their password, or request a password reset using the form built in this step.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" class="collapsed">
+                                                8. Logoff
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-8">Step 8</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Candidates who are logged in can logout using this step.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" class="collapsed">
+                                                9. Update candidate profile
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-9">Step 9</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse9" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Logged in candidates can maintain their candidate profile
+                                            such as updating their availability. work preferences or uploading a new CV.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10" class="collapsed">
+                                                10. Favourite vacancies
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-10">Step 10</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse10" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Logged in candidates can add selected vacancies to a list of favourites from where they can 
+                                            apply to one or more in a single operation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse11" class="collapsed">
+                                                11. Applying to vacancies
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-11">Step 11</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse11" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Candidates who are logged in can apply to one or more vacancies and automatically alert the
+                                            managing recruitment consultant together with sending automated template driven e-mail messages
+                                            to the candidate confirming their application.
+                                            Candidate details are logged against the shortlist of applied vacancies allowing recruitment 
+                                            consultants to quickly and efficiently progress each application using the underlying CRM system.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse12" class="collapsed">
+                                                12. Manage vacancy applications
+                                            </a>
+                                            <span style="float: right; width: 60px;">
+                                                <a href="/step-12">Step 12</a>
+                                            </span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse12" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Candidates can apply to many vacancies so this helps them keep track of which vacancies they
+                                            are shortlisted for including their interview schedule and any feedback from recruiters or
+                                            clients.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+			
+    </div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    &copy; 1992 - 2015 &nbsp; TriSys Business Software &nbsp; | &nbsp; Recruitment Agency Technology &bull; CRM &bull; Web &bull; Mobile &bull; Cloud
+                </div>
+                <div class="col-md-4" style="text-align: right;">
+                    <a href="http://www.trisys.co.uk/" target="_blank">www.trisys.co.uk</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="/assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/assets/js/bootstrap.js"></script>
+</body>
+</html>

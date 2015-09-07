@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>TriSys Web API Step by Step Guide</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2" style="text-align: left;">
+                    <a href="http://jobs.trisys.co.uk">
+                        <img src="https://api.trisys.co.uk/doc/images/TriSys-v10-50x50.png" height="36" />
+                    </a>
+                    &nbsp;
+                    <strong>TriSys Web API</strong>
+                </div>
+                <div class="col-md-10">
+                    <strong>Step by Step Guide to Building a Recruitment Agency Web Site</strong>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="../step-1">Step 1</a></li>						
+                            <li><a href="../step-2">Step 2</a></li>
+                            <li><a href="../step-3">Step 3</a></li>
+                            <li><a class="menu-top-active">Step 4 (Contact Us)</a></li>
+                            <li><a href="../step-5">Step 5 (Registration)</a></li>
+                            <li><a href="../step-6">Step 6</a></li>
+                            <li><a href="../step-7">Step 7</a></li>
+                            <li><a href="../step-8">Step 8</a></li>
+                            <li><a href="../step-9">Step 9</a></li>
+                            <li><a href="../step-10">Step 10</a></li>
+                            <li><a href="../step-11">Step 11</a></li>
+                            <li><a href="../step-12">Step 12</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h1>Step 4: Contact Us</h1><br />
+                    <p>
+                        This is the fourth stage in the step by step guide to building a recruitment agency web site
+                        which uses the TriSys Web API to search, display and update recruiting data
+                        held in TriSys' cloud. We are sending a contact us request.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">     
+                <div class="col-md-12">   
+                    
+                    <h1 class="page-head-line">Contact Us Area </h1>    			
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Your Details
+                        </div>
+                        <div class="panel-body">
+   
+                           <div class="form-group">
+                                <label>Title</label>
+                                <select class="form-control" id="cmbContactTitle">
+                                    
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtForenames">Forename(s)</label>
+                                <input type="text" class="form-control" id="txtForenames" />
+                            </div>
+                            <div class="form-group">
+                                <label for="txtSurname">Surname</label>
+                                <input type="text" class="form-control" id="txtSurname" />
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Company
+                                </label>
+                                <input type="text" class="form-control" name="txtCompanyName" id="Contact_CompanyName" maxlength="50">
+                            </div>
+
+                            <!-- TELEPHONE NUMBERS -->
+                            <div class="form-group">
+                                <label>
+                                    Home Telephone Number
+                                </label>
+                                <input type="text" class="form-control" name="txtHomeTel" id="Contact_HomeAddressTelNo" maxlength="20">
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Work Telephone Number
+                                </label>
+                                <input type="text" class="form-control" name="txtWorkTel" id="Contact_WorkTelNo" maxlength="20">
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Personal Mobile Telephone Number
+                                </label>
+                                <input type="text" class="form-control" name="txtMobTel" id="Contact_MobileTelNo" maxlength="20">
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Work Mobile Telephone Number
+                                </label>
+                                <input type="text" class="form-control" name="txtWorkMobTel" id="ContactConfigFields_WorkMobile" maxlength="20">
+                            </div>
+                            <!-- END OF TELEPHONE NUMBERS -->
+                            <!-- E-MAIL ADDRESSES -->
+                            <div class="form-group">
+                                <label>
+                                    Work E-Mail Address
+                                </label>
+                                <input type="text" class="form-control" id="Contact_EMail" maxlength="100">
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Personal E-Mail Address
+                                </label>
+                                <input type="text" class="form-control" id="ContactConfigFields_AlternativeEMailAddress1" maxlength="100">
+                            </div>
+                            <!-- END OF E-MAIL ADDRESSES -->
+
+                            <div class="form-group">
+                                <label>Type of Enquiry</label>
+                                <select class="form-control" id="typeOfEnquiry" >
+                                    <option>Candidate/Job Seeker</option>
+                                    <option>Client/Hiring Manager</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    Message / Enquiry
+                                    <br>
+                                </label>
+                                <textarea style="width:100%; resize: none;" id="txtMessage" rows="5" class="form-control"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success" onclick="TriSysStepByStep.Step4.ContactUsSubmission()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+
+                <div class="col-md-4">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="alert alert-warning">
+                                <h4>Contact Us</h4>
+
+                                <p>
+                                    Please complete and submit the form on the left if you would like
+                                    us to contact you.
+                                </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </div>			
+    </div>
+
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    &copy; 1992 - 2015 &nbsp; TriSys Business Software &nbsp; | &nbsp; Recruitment Agency Technology &bull; CRM &bull; Web &bull; Mobile &bull; Cloud
+                </div>
+                <div class="col-md-4" style="text-align: right;">
+                    <a href="http://www.trisys.co.uk/" target="_blank">www.trisys.co.uk</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="/assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/assets/js/bootstrap.js"></script>    
+    
+    <!-- TRISYS WEB API -->
+    <script src="https://api.trisys.co.uk/javascript/github/TriSysAPI.js"></script>
+
+    <!-- TRISYS APEX -->
+    <script src="https://apex.trisys.co.uk/javascript/TriSysApex.js"></script>
+
+    <!-- TRISYS Web API Step by Step Guide -->
+    <script src="/assets/js/TriSys-StepByStep.js"></script>
+
+    <!-- After the page has loaded, call the Javascript code to populate the lookup combos
+      -- and to display a list of live vacancies directly in the displayed table.
+      -->
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            TriSysStepByStep.Step4.Load();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>TriSys Web API Step by Step Guide</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2" style="text-align: left;">
+                    <a href="http://jobs.trisys.co.uk">
+                        <img src="https://api.trisys.co.uk/doc/images/TriSys-v10-50x50.png" height="36" />
+                    </a>
+                    &nbsp;
+                    <strong>TriSys Web API</strong>
+                </div>
+                <div class="col-md-10">
+                    <strong>Step by Step Guide to Building a Recruitment Agency Web Site</strong>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="../step-1">Step 1</a></li>						
+                            <li><a href="../step-2">Step 2</a></li>
+                            <li><a href="../step-3">Step 3</a></li>
+                            <li><a href="../step-4">Step 4</a></li>
+                            <li><a href="../step-5">Step 5</a></li>
+                            <li><a href="../step-6">Step 6</a></li>
+                            <li><a href="../step-7">Step 7</a></li>
+                            <li><a class="menu-top-active">Step 8 (Logoff)</a></li>
+                            <li><a href="../step-9">Step 9 (Update Profile)</a></li>
+                            <li><a href="../step-10">Step 10</a></li>
+                            <li><a href="../step-11">Step 11</a></li>
+                            <li><a href="../step-12">Step 12</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h1>Step 8: Logoff</h1><br />
+                    <p>
+                        This is the eighth stage in the step by step guide to building a recruitment agency web site
+                        which uses the TriSys Web API to search, display and update recruiting data
+                        held in TriSys' cloud. We are a logged in candidate who is logging off.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h1 class="page-head-line">Candidate Logoff Area </h1>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Your Details
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="form-group">
+                                <p id="trisys-logoff-status">
+                                    You are currently not logged in.
+                                </p>
+                            </div>
+                            <hr />
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success" onclick="TriSysStepByStep.Step8.LogoffSubmission()">Logoff</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="alert alert-warning">
+                                <h4>Logoff</h4>
+
+                                <p>
+                                    Please click the logoff button if you would like
+                                    to logoff our web site.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+			
+    </div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    &copy; 1992 - 2015 &nbsp; TriSys Business Software &nbsp; | &nbsp; Recruitment Agency Technology &bull; CRM &bull; Web &bull; Mobile &bull; Cloud
+                </div>
+                <div class="col-md-4" style="text-align: right;">
+                    <a href="http://www.trisys.co.uk/" target="_blank">www.trisys.co.uk</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="/assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/assets/js/bootstrap.js"></script>
+
+    <!-- TRISYS WEB API -->
+    <script src="https://api.trisys.co.uk/javascript/github/TriSysAPI.js"></script>
+
+    <!-- TRISYS Web API Step by Step Guide -->
+    <script src="/assets/js/TriSys-StepByStep.js"></script>
+
+    <!-- After the page has loaded, call the Javascript code to populate the lookup combos
+      -- and to display a list of live vacancies directly in the displayed table.
+      -->
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            TriSysStepByStep.Step8.Load();
+        });
+    </script>
+
+</body>
+</html>
